@@ -1,0 +1,76 @@
+LINK TO THE GOOGLE DOCS :  https://docs.google.com/document/d/14u8hNAh-M751_NrE2dIEUMOAKIKMN2pUprxoIeOeTZo/edit?usp=sharing
+
+DUEL-GAME TEST CASE!
+
+Overview
+Test the functionality of the game!
+LINKS:
+http:localhost:8000
+‌
+TEST CRITERIA:
+- Make sure random 5 bots are listed when you click draw in the beginning of - the game.
+- Make sure the bots have a name, health, attack 1 and attack 2
+- Make sure the add to duo button works 
+- Make sure the remove from duo button also works
+- Make sure the wins/losses are working correctly after every game.
+- Make sure you can see how many times/rounds the game was played. 
+- Make sure you can play again and the play again button restarts the game. 
+‌
+ENTRY CRITERIA:
+- Test Criteria provided
+- Running version of the game
+- Machine to test
+EXIT CRITERIA:
+- all the tests have passed
+- the allotted time is up
+OTHER DETAILS:
+- Environment:MacOs, Windows, Linux
+- Chrome is preferred but should be able to run any browser. 
+COVERAGE:
+- complete coverage
+_________________________________________________________________________________________________
+TEST CASE 1:
+This test will verify that the 5 robots appear when you click draw, and you are able to play the game 
+STEPS:
+- Navigate to the localhost:3000 after running npm start.
+- Click on a on the draw button
+- Able to see all bots you can pick and all of their names, health, and attacks
+- Able to click on any of the 5 and have them appear at the bottom
+- Able to remove if you do not like your robot
+Test Post-conditions:
+- The bots should’ve appeared 
+- You are able to add/remove the robots 
+- Able to see what robot you picked
+OTHER DETAILS:
+- execution environment:OS: MacOS, venture 13.2
+Browser: Google Chrome
+________________________________________________________________________________________________
+TEST CASE 2:
+This test will verify that the game has started and you played with the same bots you picked. Wins/losses/draws are also tallied and are able to be seen after every game. 
+STEPS:
+- Navigate to the localhost:8000 after running npm start.
+- Click on a on the draw button
+- Able to start to pick your bots and start the game. 
+- Able to see wins, draws and losses working correctly after every game. 
+- Able to play the game again.
+- Test Post-conditions:
+- The bots should’ve appeared 
+- You are able to see how many times you won, lost and drawed with the computer 
+- The game should be able to be played again. 
+OTHER DETAILS:
+- execution environment:OS: MacOS, venture 13.2
+Browser: Google Chrome
+BUG REPORT:
+- Description The “wins/losses” count crashes after played
+Steps to reproduce:
+- Navigate to http://localhost:8000/ after running npm start
+- Make sure the Win column works because it only shows losses
+Expected Result:
+- Wins, losses, and draws all appear on the screen after the game is played.
+- Able to track
+Actual Result:
+- The losses count appears to be working
+- Only counts losses if you win, lose or draw
+- The server crashes. The game appears to run still
+Other Details:
+- Environment: os: WINDOWS, Browser: CHROME
